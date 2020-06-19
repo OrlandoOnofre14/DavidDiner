@@ -1,0 +1,43 @@
+body {
+  font-family: Helvetica,serif;
+  background: linear-gradient(to bottom, #66ff99 0%, #9933ff 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color:  #000066;
+  line-height: 1.5;
+  margin-bottom:50px;
+  font-size: 0.875rem;
+}
+fieldset{
+border-color: darkgreen;
+border-style: solid;
+}
+
+h1{
+  font-family: Helvetica,serif;
+}
+h2{
+	text-align: center;
+	font-family: 'Lobster Two',serif;
+	font-size: 60px;
+}
+
+
+
+.footer {
+ background-color:#800080;
+ color:#eeeeee;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  height: 50px;
+  right: 0px;
+  bottom: 0;
+  margin-bottom: 0px;  
+}
+
+
+
+
+
+

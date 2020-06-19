@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>David's Diner</title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" type="image/png" href="favicon-16x16.png"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+  
+<div class="w3-sidebar w3-indigo w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+ 
+ 
+ <a href="review.html" class="w3-bar-item w3-button w3-hover-none w3-border-indigo w3-bottombar w3-hover-border-blue">Customer Reviews</a>
+  <a href="qa.html" class="w3-bar-item w3-button w3-hover-none w3-border-indigo w3-bottombar w3-hover-border-red">Freq. Questions</a>
+  <a href="co.html" class="w3-bar-item w3-button w3-hover-none w3-border-indigo w3-bottombar w3-hover-border-yellow">Contact Us</a>
+</div>
+
+
+
+<div class="w3-indigo">
+  <button class="w3-button w3-indigo w3-xlarge " onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>David's Diner</h1>
+  </div>
+</div>
+
+<div class="w3-container"></div>
+   
+</div>
+
+<script>
+function w3_open() {
+ document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+
+    <section class="menu">
+	
+
+
+	  <div class="title">
+		<h2>Our Menu</h2>
+      <div class="underline"></div>
+	  </div>
+	
+	<div class="btn-container"></div>
+	    
+	
+		
+    <div class="section-center"></div> 
+    </section>
+    
+
+		  
+	<!-- javascript integration-->
+    <script src="app.js"></script>
+	<footer class = "footer"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Orlando Onofre All Rights Reserved</footer> 
+	
+  </body>
+  
+</html>

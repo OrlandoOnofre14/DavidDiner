@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>David's Diner Questions </title>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="favicon-16x16.png"/>
+    <link rel="stylesheet" href="styles3.css" /> 
+  </head>
+	
+<body>	
+	 
+	 
+<div class="w3-sidebar w3-sand w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+ 
+ 
+ <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-sand w3-bottombar w3-hover-border-blue">Home Page</a>
+  <a href="review.html" class="w3-bar-item w3-button w3-hover-none w3-border-sand w3-bottombar w3-hover-border-red">Reviews </a>
+  <a href="co.html" class="w3-bar-item w3-button w3-hover-none w3-border-sand w3-bottombar w3-hover-border-yellow">Contact Us</a>
+</div>
+
+
+
+<div class="w3-indigo">
+  <button class="w3-button w3-indigo w3-xlarge " onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>David's Diner</h1>
+  </div>
+</div>
+
+<div class="w3-container"></div>
+   
+</div>
+
+<script>
+function w3_open() {
+ document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+</script>
+
+<section class="questions">
+       
+        <div class="title">
+          <h2>Frequent Questions</h2>
+        </div>
+        
+        <div class="section-center">
+         
+          <article class="question">
+       
+            <div class="question-title">
+              <p>Do you accept all major credit cards?</p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="fa fa-plus-square-o"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="fa fa-minus-square-o"></i>
+                </span>
+              </button>
+            </div>
+           
+            <div class="question-text">
+              <p>
+                Yes, we accept all major credit and debit cards. We accept cryptocurrency and electronic payment (e.g. Apple Pay, CashApp). We do not accept checks.  
+              </p>
+            </div>
+          </article>
+      
+          <article class="question">
+           
+            <div class="question-title">
+              <p>Vegan or vegetarian options? </p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="fa fa-plus-square-o"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="fa fa-minus-square-o"></i>
+                </span>
+              </button>
+            </div>
+          
+            <div class="question-text">
+              <p>
+               Yes, all of our selections do have an alterative selection. Options include: vegan, vegetarian, keto, gluten-free, and other diet selections upon request beforehand .</p>
+            </div>
+          </article>
+      
+          <article class="question">
+            
+            <div class="question-title">
+              <p>Do you use organic ingredients?</p>
+              <button type="button" class="question-btn">
+                <span class="plus-icon">
+                  <i class="fa fa-plus-square-o"></i>
+                </span>
+                <span class="minus-icon">
+                  <i class="fa fa-minus-square-o"></i>
+                </span>
+              </button>
+            </div>
+            
+            <div class="question-text">
+              <p>
+                Yes. All of our food products are organic and are USDA certified, NSF certified, and AMS certified. We ONLY use 100% organic products and produce. 
+              </p>
+            </div>
+          </article>
+          
+      </section>
+    </main>
+    
+   
+   
+ <script>
+	const questions = document.querySelectorAll(".question");
+
+questions.forEach(function (question) {
+  const btn = question.querySelector(".question-btn");
+  
+
+  btn.addEventListener("click", function () {
+    
+
+    questions.forEach(function (item) {
+      if (item !== question) {
+        item.classList.remove("show-text");
+      }
+    });
+
+    question.classList.toggle("show-text");
+  });
+});
+	</script>
+<br>
+<br>
+<br>
+<br>
+<br><br>
+<footer class = "footer"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Orlando Onofre All Rights Reserved</footer> 
+
+  </body>
+</html>

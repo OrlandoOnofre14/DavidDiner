@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Contact Us</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="styles4.css" /> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="favicon-16x16.png"/>
+
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  .fa-instagram {
+  background: linear-gradient(to bottom, #cc33ff 0%, #ff9933 100%);
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+
+<script>
+window.alert("Welcome to contact page!");
+</script>
+
+	 
+<div class="w3-sidebar w3-sand w3-bar-block" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large">Close &times;</button>
+ 
+ 
+ <a href="index.html" class="w3-bar-item w3-button w3-hover-none w3-border-sand w3-bottombar w3-hover-border-blue">Home Page</a>
+  <a href="review.html" class="w3-bar-item w3-button w3-hover-none w3-border-sand w3-bottombar w3-hover-border-red">Reviews </a>
+  <a href="qa.html" class="w3-bar-item w3-button w3-hover-none w3-border-sand w3-bottombar w3-hover-border-yellow">Freq. Asked Questions</a>
+</div>
+
+
+
+<div class="w3-indigo ">
+  <button  class=" w3-button w3-indigo w3-xlarge " onclick="w3_open()">&#9776;</button>
+  <div class="w3-container" >
+    <h1>David's Diner</h1>
+  </div>
+</div>
+
+<div class=" w3-container"></div>
+   
+</div>
+
+<script>
+function w3_open() {
+ document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+
+</script>
+
+
+
+
+<form method = "post" action = "http://webdevbasics.net/scripts/demo.php">
+<br>
+<br>
+
+
+<h2>RSVP </h2>
+
+<div style="text-align: center; ">
+  <img src= "f.jfif" alt = "fancy restaurant" height="420" width="420" style = "border: 5px solid #0d98ba ;">
+</div>
+<br>
+<br>
+<p style ="text-align: center; font-size: 20px;">Below are our social media links! Enjoy!</p>
+<div style="text-align: center; ">
+<a href="https://facebook.com" class="fa fa-facebook"></a>
+<a href="https://twitter.com" class="fa fa-twitter"></a>
+<a href="https://youtube.com" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+<a href="https://www.snapchat.com/" class="fa fa-snapchat-ghost"></a>
+</div>
+<br>
+<br>
+
+
+Enter First Name: <br> <textarea name = "fN" id = "fN" required maxlength = "30">
+</textarea> <br><br>
+
+Enter Last Name: <br> <textarea name = "lN" id = "lN" required maxlength = "30">
+</textarea> <br><br>
+
+Select best day of availability:<br>
+<input required type="radio" name="favday" id="favMon" value="Mon"> Monday<br>
+<input required type="radio" name="favday" id="favTues" value="Tues"> Tuesday<br>
+<input required type="radio" name="favday" id="favWed" value="Wed"> Wednesday<br>
+<input required type="radio" name="favday" id="favThur" value="Thur"> Thursday<br>
+<input required type="radio" name="favday" id="favFri" value="Fri"> Friday<br>
+<input required type="radio" name="favday" id="favSat" value="Sat"> Saturday<br>
+<input required type="radio" name="favday" id="favSun" value="Sun"> Sunday<br>
+<br>
+Select best time to meet:<br>
+<select>
+  <option  value="mn">Morning</option>
+  <option  value="an">Afternoon</option>
+  <option  value="ev">Evening</option>
+  <option  value="nt">Night</option>
+</select>
+
+<br><br>
+<fieldset>
+    <legend>Contact Information:</legend>
+    <label>E-mail: <input required type="text" name="email" id="email" size = "54"></label>
+	<br><br>
+    <label>Address: <input required type="text" name="address" id="address" size = "54"></label>
+	<br><br>
+	<label>City: <input required type="text" name="city" id="city" size = "54"></label>
+	<br><br>
+	<label>State: <input required type="text" name="state" id="state" maxlength="2"
+	size="2"></label>
+	<br><br>
+	<label>Zip Code: <input required type="text" name="zip" id="zip" maxlength="5"
+	size="5"></label>
+	<br><br>
+	<label>Phone Number: <input required type="text" name="pNum" id="pNum" maxlength="15"
+	size="15"></label>
+</fieldset>
+<br>
+<label for="myDate">Choose a Date to Meet:</label>
+<br>
+<input required type="date" name="myDate" id="myDate">
+<br>
+<br>
+<label for="myComments">Comments:</label>
+<br>
+<textarea name="myComments" id="myComments" rows="2" cols="20" required="required"></textarea>
+<br>
+<br>
+<label for="myRating">Rating our Dinner from 1 to 10:</label>
+<br>
+<input type="range" name="myRating" id="myRating" min="1" max="10">
+<br>
+<br>
+<button type="submit">
+<div class= "center"><img src="android-chrome-512x512.png" width="80" height="28" alt="Sign up today"><br>Sign up to our e-mail!</div>
+</button>
+<br>
+<br>
+<input type="reset" value="Reset">
+<input id = "submitting" type = "submit" value = "Submit">
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<footer class = "footer"> Copyright &copy; <script>document.write(new Date().getFullYear())</script> Orlando Onofre All Rights Reserved</footer> 
+</body>
+</html>
